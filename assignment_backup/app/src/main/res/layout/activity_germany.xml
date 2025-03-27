@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/germany_background"
+    tools:context=".GermanyActivity">
+
+    <ImageButton
+        android:id="@+id/imageButtonPancake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/potato_salad"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonPudding"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPancake"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonSalad"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSalad"
+        app:srcCompat="@drawable/potatopancakes"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSalad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:background="@null"
+        android:contentDescription="@string/potato_pancake"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonPancake"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSalad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/potatosalad"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPudding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="142dp"
+        android:background="@null"
+        android:contentDescription="@string/semolina_pudding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPudding"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonPancake"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonPancake"
+        app:srcCompat="@drawable/semolinapudding"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/buttonSalad"
+        android:layout_width="209dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="136dp"
+        android:background="@android:color/transparent"
+        android:text="@string/potato_salad"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPancake"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonSalad"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonPancake"
+        android:layout_width="209dp"
+        android:layout_height="158dp"
+        android:background="@android:color/transparent"
+        android:text="@string/potato_pancake"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPudding"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSalad"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonPancake"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSalad" />
+
+    <Button
+        android:id="@+id/buttonPudding"
+        android:layout_width="209dp"
+        android:layout_height="137dp"
+        android:layout_marginBottom="142dp"
+        android:background="@android:color/transparent"
+        android:text="@string/semolina_pudding"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPancake"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonPudding"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPancake"
+        tools:ignore="TextContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

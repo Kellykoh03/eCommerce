@@ -1,0 +1,147 @@
+﻿/*top banner section*/
+.row.top-banner {
+    width: 100%;
+    background-image: url('../image/topbanner.png');
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    background-size: cover;
+}
+
+    .row.top-banner h4 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        color: white;
+        padding: 70px 0;
+    }
+
+
+/*updated myAccount section*/
+.myAccount-mainContainer {
+    background-color: white;
+    max-width: 1080px;
+    margin: 0 auto;
+    min-height: 340px;
+    padding: 50px 10px;
+}
+
+    .myAccount-mainContainer .d-flex {
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .myAccount-mainContainer .nav-pills .nav-link.active {
+        background-color: #F02757;
+    }
+
+    .myAccount-mainContainer .nav-link {
+        color: black;
+    }
+
+
+.myAccount.profile {
+    background: white;
+}
+
+    .myAccount.profile .myAccount-container{
+        padding:0;
+    }
+
+    .myAccount.profile .left-container {
+        width: 100%;
+    }
+
+
+
+
+/* all section */
+.myAccount {
+    background: #f0f6ff;
+}
+
+    .myAccount * {
+        color: #000000;
+    }
+
+    .myAccount .myAccount-container {
+        z-index: 1;
+        position: relative;
+        width: 100%;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+.myAccount-container .left-container {
+    width: 70%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 40px;
+}
+
+    .myAccount-container .left-container h3 {
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .myAccount-container .left-container p {
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+.myAccount form {
+    padding: 50px 50px;
+}
+
+.myAccount input[type="text"],
+.myAccount input[type="password"],
+.myAccount input[type="tel"],
+.myAccount input[type="date"],
+.myAccount textarea,
+.myAccount input[type="email"],
+.myAccount input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 10px;
+    color: #000;
+    position: relative;
+    transition: outline 0.2s linear;
+}
+
+    .myAccount input[type="text"]:focus,
+    .myAccount input[type="password"]:focus,
+    .myAccount input[type="tel"]:focus,
+    .myAccount input[type="date"]:focus,
+    .myAccount textarea:focus,
+    .myAccount input[type="email"]:focus,
+    .myAccount input[type="number"]:focus {
+        background-color: #ddd;
+        outline: 3px solid #F02757;
+    }
+
+/* Set a style for all buttons */
+.myAccount .signupbtn {
+    background-color: #F02757;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+    .myAccount .signupbtn:hover {
+        opacity: 1;
+    }

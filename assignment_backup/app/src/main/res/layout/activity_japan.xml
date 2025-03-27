@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/japan_background"
+    tools:context=".JapanActivity">
+
+    <ImageButton
+        android:id="@+id/imageButtonChawanmushi"
+        android:layout_width="200dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="159dp"
+        android:background="@null"
+        android:contentDescription="@string/chawanmushi"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonWafu"
+        app:layout_constraintEnd_toStartOf="@+id/buttonChawanmushi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chawanmushi"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMiso"
+        android:layout_width="wrap_content"
+        android:layout_height="133dp"
+        android:layout_marginBottom="173dp"
+        android:background="@null"
+        android:contentDescription="@string/miso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMiso"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonWafu"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonWafu"
+        app:srcCompat="@drawable/misochicken"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButtonWafu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/wafu"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonMiso"
+        app:layout_constraintEnd_toStartOf="@+id/buttonWafu"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonChawanmushi"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonChawanmushi"
+        app:srcCompat="@drawable/wafu"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/buttonChawanmushi"
+        android:layout_width="210dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="159dp"
+        android:background="@android:color/transparent"
+        android:text="@string/chawanmushi"
+        android:textColor="#D50000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWafu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonChawanmushi"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWafu"
+        android:layout_width="210dp"
+        android:layout_height="133dp"
+        android:background="@android:color/transparent"
+        android:text="@string/wafu"
+        android:textColor="#D50000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMiso"
+        app:layout_constraintEnd_toEndOf="@+id/buttonChawanmushi"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonWafu"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChawanmushi" />
+
+    <Button
+        android:id="@+id/buttonMiso"
+        android:layout_width="210dp"
+        android:layout_height="133dp"
+        android:layout_marginBottom="173dp"
+        android:background="@android:color/transparent"
+        android:text="@string/miso"
+        android:textColor="#D50000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWafu"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonMiso"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWafu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

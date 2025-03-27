@@ -1,0 +1,144 @@
+﻿/*top banner section*/
+.row.top-banner {
+    background-image: url('../image/topbanner.png');
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    background-size: cover;
+}
+
+    .row.top-banner h4 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        color: white;
+        padding: 70px 0;
+    }
+
+
+
+/* login section */
+.login {
+    background: #f0f6ff;
+}
+
+    .login * {
+        color: #000000;
+    }
+
+    .login .login-container {
+        z-index: 1;
+        position: relative;
+        width: 100%;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+.login-container .left-container {
+    width: 50%;
+    border-radius: 20px 0 0 20px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 40px;
+}
+
+    .login-container .left-container h3 {
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .login-container .left-container p {
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+.login-container .right-container {
+    width: 30%;
+    background-image: url('../image/loginregistrationsideimage.png');
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    background-size: cover;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+    .login-container .right-container .textContent {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-container .right-container p {
+        color: #fff;
+    }
+
+    .login-container .right-container img {
+        width: 70%;
+        padding-bottom: 10px;
+    }
+
+.login form {
+    padding: 50px 50px;
+}
+
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="tel"],
+.login input[type="date"],
+.login textarea,
+.login input[type="email"],
+.login input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 10px;
+    color: #000;
+    position: relative;
+    transition: outline 0.2s linear;
+}
+
+    .login input[type="text"]:focus,
+    .login input[type="password"]:focus,
+    .login input[type="tel"]:focus,
+    .login input[type="date"]:focus,
+    .login textarea:focus,
+    .login input[type="email"]:focus,
+    .login input[type="number"]:focus {
+        background-color: #ddd;
+        outline: 3px solid #F02757;
+    }
+
+/* Set a style for all buttons */
+.login .signupbtn {
+    background-color: #F02757;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+    .login .signupbtn:hover {
+        opacity: 1;
+    }
+
+
+.login .registration-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_background"
+    tools:context=".RateUsActivity">
+
+    <TextView
+        android:id="@+id/RateUsTextView"
+        android:layout_width="165dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="140dp"
+        android:background="#00FFFFFF"
+        android:text="@string/rate_us"
+        android:textColor="@color/teal_700"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/rate_us" />
+
+    <EditText
+        android:id="@+id/EditTextFeedback"
+        android:layout_width="270dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/feedback"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#00796B"
+        app:layout_constraintBottom_toTopOf="@+id/ConfirmButton"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBar"
+        app:layout_constraintStart_toStartOf="@+id/ratingBar"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <Button
+        android:id="@+id/ConfirmButton"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="204dp"
+        android:text="@string/confirm"
+        android:textColor="#000000"
+        app:backgroundTint="@color/teal_700"
+        app:iconTint="@color/beige"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/EditTextFeedback"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/EditTextFeedback"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextFeedback"
+        tools:ignore="TextContrastCheck"
+        tools:text="@string/confirm" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/rate_us"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/light_grey"
+        android:progressTint="@color/gold"
+        android:rating="3"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextFeedback"
+        app:layout_constraintEnd_toEndOf="@+id/RateUsTextView"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/RateUsTextView"
+        app:layout_constraintTop_toBottomOf="@+id/RateUsTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

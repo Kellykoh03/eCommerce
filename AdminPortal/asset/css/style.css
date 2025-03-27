@@ -1,0 +1,78 @@
+﻿.pagination {
+    text-align: center;
+    margin-top: 2rem;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+    .pagination a {
+        color: black;
+        padding: 8px 16px;
+        text-decoration: none;
+        border: 1px solid #F02757;
+        margin: 0 5px;
+        border-radius: 4px;
+    }
+
+        .pagination a:hover {
+            background-color: #F02757;
+            color: white;
+        }
+
+    .pagination .active {
+        background-color: #F02757;
+        color: white;
+    }
+
+.card-container {
+    margin-left: 120px;
+    margin-right: 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+#page-numbers {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.prevNextBtn {
+    background-color: white;
+}
+
+    .prevNextBtn:hover {
+        background-color: #F02757;
+        color: white;
+    }

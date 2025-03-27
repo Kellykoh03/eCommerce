@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/malaysia_background"
+    tools:context=".MalaysiaActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRojak"
+        android:layout_width="208dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="136dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@null"
+        android:text="@string/rojak"
+        android:textColor="#B71C1C"
+        android:textSize="17sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBegedil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonRojak"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonBegedil"
+        android:layout_width="208dp"
+        android:layout_height="165dp"
+        android:background="@android:color/transparent"
+        android:text="@string/begedil"
+        android:textColor="#B71C1C"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBubur"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRojak"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBegedil"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRojak"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonBubur"
+        android:layout_width="208dp"
+        android:layout_height="165dp"
+        android:layout_marginBottom="104dp"
+        android:background="@android:color/transparent"
+        android:text="@string/bubur"
+        android:textColor="#B71C1C"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBegedil"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBubur"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBegedil"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRojak"
+        android:layout_width="200dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="136dp"
+        android:background="@null"
+        android:contentDescription="@string/rojak"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBegedil"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRojak"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fruitrojak" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBegedil"
+        android:layout_width="200dp"
+        android:layout_height="165dp"
+        android:background="@null"
+        android:contentDescription="@string/begedil"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonBubur"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBegedil"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonRojak"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonRojak"
+        app:srcCompat="@drawable/begedil" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBubur"
+        android:layout_width="200dp"
+        android:layout_height="165dp"
+        android:layout_marginBottom="104dp"
+        android:background="@null"
+        android:contentDescription="@string/bubur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBubur"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonBegedil"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBegedil"
+        app:srcCompat="@drawable/burburchacha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

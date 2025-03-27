@@ -1,0 +1,181 @@
+﻿/* entryDetail section */
+
+.entryDetail * {
+    color: #000000;
+}
+
+.entryDetail .entryDetail-container {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.entryDetail h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.entryDetail .small-text{
+    padding-left:10px;
+    font-weight:400;
+    color:#808080;
+    font-size:10px;
+
+}
+
+.entryDetail-container .left-container {
+    width: 80%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 1px solid #0000002d;
+    padding: 40px;
+}
+
+    .entryDetail-container .left-container h3 {
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .entryDetail-container .left-container p {
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+.entryDetail form {
+    padding: 50px 50px;
+}
+
+.entryDetail .option-row{
+    padding-bottom: 20px;
+}
+
+.entryDetail .actions-column{
+    width: 100%;
+}
+
+.entryDetail input[type="file"] {
+    width: 100%;
+    margin-bottom:40px;
+}
+
+
+.entryDetail input[type="text"],
+.entryDetail input[type="password"],
+.entryDetail input[type="tel"],
+.entryDetail input[type="date"],
+.entryDetail textarea,
+.entryDetail input[type="email"],
+.entryDetail input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 10px;
+    color: #000;
+    position: relative;
+    transition: outline 0.2s linear;
+}
+
+
+    .entryDetail input[type="text"]:focus,
+    .entryDetail input[type="password"]:focus,
+    .entryDetail input[type="tel"]:focus,
+    .entryDetail input[type="date"]:focus,
+    .entryDetail textarea:focus,
+    .entryDetail input[type="email"]:focus,
+    .entryDetail input[type="number"]:focus {
+        background-color: #ddd;
+        outline: 3px solid #F02757;
+    }
+
+.entryDetail input[type="datetime"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 10px;
+    color: #000;
+    position: relative;
+    transition: outline 0.2s linear;
+}
+
+
+
+/* Set a style for all buttons */
+.entryDetail .signupbtn {
+    background-color: #F02757;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.entryDetail .signupbtn:hover {
+    opacity: 1;
+}
+
+/*options field for product type*/
+.header-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.add-option-button {
+    margin-left: auto;
+}
+
+
+.option-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .option-group label {
+        width: 100px; /* Adjust width as needed */
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+.option-input {
+    margin-right: 10px;
+}
+
+.entryDetail .option-group  input[type="text"] {
+    margin: 0;
+}
+
+.remove-option-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+.product-type-row{
+    margin-bottom:40px;
+}
+
+
+.orderInfo {
+    padding-bottom: 0 !important;
+    color: black !important;
+    text-align: left !important;
+    margin-bottom: 0 !important;
+}
